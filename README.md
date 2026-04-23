@@ -14,4 +14,4 @@ descriptives tout en respectant les principes SOLID.
 - AfficheurConsole : implements IAfficheur.
   Seule responsabilité : afficher les statistiques dans la console.
 - Statistiques : Classe avec une seule responsabilité : stocker les statistiques d'une colonne
-  numérique (moyenne, min, max).   
+  numérique (moyenne, min, max).  
