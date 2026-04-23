@@ -8,31 +8,31 @@ descriptives tout en respectant les principes SOLID.
 
 ## 1- Création des interfaces :
 
-    1.1- ILecteur
+    1.1- ILecteur pour la lecture de données.
          - Définition du contrat de lecture des données
          - Déclaration de la méthode lire() retournant les données brutes
          - Déclaration de la méthode getEntetes() retournant les noms des colonnes
          - Permet de brancher d'autres formats (JSON, Excel...) sans modifier le code existant
 
-    1.2- IAfficheur
+    1.2- IAfficheur pour l'affichage console.
          - Définition du contrat d'affichage des statistiques
          - Déclaration de la méthode afficher(statistiques)
          - Séparation en interface distincte de IExporteur
 
 ## 2- Implémentation des classes :
 
-    2.1- AfficheurConsole
+    2.1- AfficheurConsole : implemente IAfficheur
          - Affichage formaté des statistiques dans la console
          - Présentation en tableau avec colonnes alignées (Moyenne, Minimum, Maximum, Valeurs)
          - Implémentation de l'interface IAfficheur (LSP)
 
-    2.2- Statistiques
+    2.2- Statistiques : stocke les statistiques
          - Modèle de données représentant les statistiques d'une colonne numérique
          - Stockage de la somme, du minimum, du maximum et du nombre de valeurs
          - Calcul de la moyenne à la volée via getMoyenne()
          - Mise à jour des données via ajouterValeur()
 
-    2.3- LecteurCSV
+    2.3- LecteurCSV : implement ILecteur
          - Lecture ligne par ligne du fichier CSV
          - Extraction des en-têtes (première ligne du fichier)
          - Gestion des lignes vides et des espaces superflus
