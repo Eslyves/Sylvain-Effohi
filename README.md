@@ -6,8 +6,8 @@ descriptives tout en respectant les principes SOLID.
 
 # Taches realisées
 ## Creation de :
-**- ILecteur :** Interface abstraite pour la lecture de données.
-**- LecteurCSV :** Implémente l'interface ILecteur
+- ILecteur : Interface abstraite pour la lecture de données.
+- LecteurCSV : Implémente l'interface ILecteur
   Seule responsabilité : lire un fichier CSV et retourner les données.
 - IAfficheur : Interface séparée uniquement pour l'affichage console.
   Affiche les statistiques dans la console.
