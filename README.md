@@ -6,12 +6,12 @@ descriptives tout en respectant les principes SOLID.
 
 # Taches realisées
 ## Creation de :
-- ILecteur : Interface abstraite pour la lecture de données.
-- LecteurCSV : Implémente l'interface ILecteur
+- **ILecteur**: Interface abstraite pour la lecture de données.
+- **LecteurCSV** : Implémente l'interface ILecteur
   Seule responsabilité : lire un fichier CSV et retourner les données.
-- IAfficheur : Interface séparée uniquement pour l'affichage console.
+- **IAfficheur** : Interface séparée uniquement pour l'affichage console.
   Affiche les statistiques dans la console.
-- AfficheurConsole : implements IAfficheur.
+- **AfficheurConsole** : implements IAfficheur.
   Seule responsabilité : afficher les statistiques dans la console.
-- Statistiques : Classe avec une seule responsabilité : stocker les statistiques d'une colonne
+- **Statistiques** : Classe avec une seule responsabilité : stocker les statistiques d'une colonne
   numérique (moyenne, min, max).  
