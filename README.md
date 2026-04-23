@@ -6,7 +6,7 @@ descriptives tout en respectant les principes SOLID.
 
 ## Travail effectué :
 
-1- Création des interfaces :
+## 1- Création des interfaces :
 
     1.1- ILecteur
          - Définition du contrat de lecture des données
@@ -19,7 +19,7 @@ descriptives tout en respectant les principes SOLID.
          - Déclaration de la méthode afficher(statistiques)
          - Séparation en interface distincte de IExporteur
 
-2- Implémentation des classes :
+## 2- Implémentation des classes :
 
     2.1- AfficheurConsole
          - Affichage formaté des statistiques dans la console
